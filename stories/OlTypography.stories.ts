@@ -54,7 +54,7 @@ export const CodeBlock: StoryObj = {
   render: () => ({
     components: { OlCode },
     template: `
-      <OlCode :inline="false" copyable>import { OlButton } from '@openleap/ui'</OlCode>
+      <OlCode :inline="false" copyable>import { OlButton } from '@openleap-io/ui'</OlCode>
     `,
   }),
 }

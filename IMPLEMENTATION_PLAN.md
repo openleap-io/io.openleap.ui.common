@@ -1,4 +1,4 @@
-# @openleap/ui — Component Implementation Plan
+# @openleap-io/ui — Component Implementation Plan
 
 > For use with Claude Code. Each batch is a self-contained prompt.
 > Run `pnpm build && pnpm test` after each batch to verify.

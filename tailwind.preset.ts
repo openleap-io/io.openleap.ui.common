@@ -1,10 +1,10 @@
 import type { Config } from 'tailwindcss'
 
 /**
- * @openleap/ui Tailwind Preset
+ * @openleap-io/ui Tailwind Preset
  *
  * Usage in consuming app:
- *   import openleapPreset from '@openleap/ui/tailwind-preset'
+ *   import openleapPreset from '@openleap-io/ui/tailwind-preset'
  *   export default { presets: [openleapPreset], ... }
  */
 export default {

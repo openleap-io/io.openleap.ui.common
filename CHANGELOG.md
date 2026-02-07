@@ -1,4 +1,4 @@
-# @openleap/ui
+# @openleap-io/ui
 
 ## 1.0.0
 
