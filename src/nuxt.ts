@@ -2,7 +2,7 @@ import { defineNuxtModule, addComponent, addImports, createResolver } from '@nux
 
 export default defineNuxtModule({
   meta: {
-    name: '@openleap-io/ui',
+    name: '@openleap-io/ui-common-library',
     configKey: 'openleapUi',
     compatibility: { nuxt: '>=3.0.0' },
   },
@@ -95,14 +95,14 @@ export default defineNuxtModule({
 
     // ── Auto-import composables ──
     addImports([
-      { name: 'useToast',            from: '@openleap-io/ui' },
-      { name: 'useTheme',            from: '@openleap-io/ui' },
-      { name: 'useBreakpoints',      from: '@openleap-io/ui' },
-      { name: 'useKeyboardShortcut', from: '@openleap-io/ui' },
-      { name: 'useClipboard',        from: '@openleap-io/ui' },
-      { name: 'useMediaQuery',       from: '@openleap-io/ui' },
-      { name: 'useDisclosure',       from: '@openleap-io/ui' },
-      { name: 'useFocusTrap',        from: '@openleap-io/ui' },
+      { name: 'useToast',            from: '@openleap-io/ui-common-library' },
+      { name: 'useTheme',            from: '@openleap-io/ui-common-library' },
+      { name: 'useBreakpoints',      from: '@openleap-io/ui-common-library' },
+      { name: 'useKeyboardShortcut', from: '@openleap-io/ui-common-library' },
+      { name: 'useClipboard',        from: '@openleap-io/ui-common-library' },
+      { name: 'useMediaQuery',       from: '@openleap-io/ui-common-library' },
+      { name: 'useDisclosure',       from: '@openleap-io/ui-common-library' },
+      { name: 'useFocusTrap',        from: '@openleap-io/ui-common-library' },
     ])
   },
 })

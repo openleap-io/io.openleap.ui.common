@@ -1,4 +1,4 @@
-# @openleap-io/ui
+# @openleap-io/ui-common-library
 
 Shared Vue 3 component library for **Elara** and **Telos**.
 
@@ -63,17 +63,17 @@ pnpm typecheck
 ## Consuming in a Nuxt 3 App
 
 ```bash
-pnpm add @openleap-io/ui
+pnpm add @openleap-io/ui-common-library
 ```
 
 ```typescript
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ['@openleap-io/ui/nuxt'],
+  modules: ['@openleap-io/ui-common-library/nuxt'],
   css: [
-    '@openleap-io/ui/tokens/base.css',
-    '@openleap-io/ui/tokens/telos.css',   // or elara.css
-    '@openleap-io/ui/tokens/dark.css',
+    '@openleap-io/ui-common-library/tokens/base.css',
+    '@openleap-io/ui-common-library/tokens/telos.css',   // or elara.css
+    '@openleap-io/ui-common-library/tokens/dark.css',
   ],
 })
 ```

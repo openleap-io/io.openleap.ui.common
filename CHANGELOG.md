@@ -1,4 +1,4 @@
-# @openleap-io/ui
+# @openleap-io/ui-common-library
 
 ## 1.0.0
 
