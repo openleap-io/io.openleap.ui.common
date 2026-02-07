@@ -1,0 +1,21 @@
+@layer openleap-tokens {
+  .dark {
+    --ol-bg-primary:     var(--ol-gray-950);
+    --ol-bg-secondary:   var(--ol-gray-900);
+    --ol-bg-tertiary:    var(--ol-gray-800);
+    --ol-bg-inverse:     var(--ol-gray-50);
+    --ol-bg-accent:      color-mix(in srgb, var(--ol-blue-600) 15%, transparent);
+
+    --ol-text-primary:   var(--ol-gray-50);
+    --ol-text-secondary: var(--ol-gray-400);
+    --ol-text-muted:     var(--ol-gray-500);
+    --ol-text-inverse:   var(--ol-gray-900);
+
+    --ol-border-default: var(--ol-gray-800);
+    --ol-border-strong:  var(--ol-gray-700);
+
+    --ol-shadow-sm:  0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --ol-shadow-md:  0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --ol-shadow-lg:  0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  }
+}

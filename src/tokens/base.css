@@ -1,0 +1,122 @@
+/*
+ * @openleap/ui — Base Design Tokens
+ * 
+ * These are the foundational tokens shared across all products.
+ * Products override via [data-product="elara"] or [data-product="telos"].
+ * Dark mode overrides via .dark class on <html>.
+ */
+
+@layer openleap-tokens {
+  :root {
+    /* ── Primitive Colors ── */
+    --ol-white: #FFFFFF;
+    --ol-black: #09090B;
+
+    --ol-gray-50:  #FAFAFA;
+    --ol-gray-100: #F4F4F5;
+    --ol-gray-200: #E4E4E7;
+    --ol-gray-300: #D4D4D8;
+    --ol-gray-400: #A1A1AA;
+    --ol-gray-500: #71717A;
+    --ol-gray-600: #52525B;
+    --ol-gray-700: #3F3F46;
+    --ol-gray-800: #27272A;
+    --ol-gray-900: #18181B;
+    --ol-gray-950: #09090B;
+
+    --ol-blue-50:  #EFF6FF;
+    --ol-blue-100: #DBEAFE;
+    --ol-blue-500: #3B82F6;
+    --ol-blue-600: #2563EB;
+    --ol-blue-700: #1D4ED8;
+
+    --ol-green-50:  #F0FDF4;
+    --ol-green-500: #22C55E;
+    --ol-green-600: #16A34A;
+
+    --ol-red-50:  #FEF2F2;
+    --ol-red-500: #EF4444;
+    --ol-red-600: #DC2626;
+
+    --ol-amber-50:  #FFFBEB;
+    --ol-amber-500: #F59E0B;
+    --ol-amber-600: #D97706;
+
+    --ol-indigo-50:  #EEF2FF;
+    --ol-indigo-500: #6366F1;
+    --ol-indigo-600: #4F46E5;
+
+    --ol-violet-500: #8B5CF6;
+    --ol-pink-500:   #EC4899;
+
+    /* ── Semantic Colors (Light Mode defaults) ── */
+    --ol-bg-primary:     var(--ol-white);
+    --ol-bg-secondary:   var(--ol-gray-50);
+    --ol-bg-tertiary:    var(--ol-gray-100);
+    --ol-bg-inverse:     var(--ol-gray-900);
+    --ol-bg-accent:      var(--ol-blue-50);
+
+    --ol-text-primary:   var(--ol-gray-900);
+    --ol-text-secondary: var(--ol-gray-600);
+    --ol-text-muted:     var(--ol-gray-400);
+    --ol-text-inverse:   var(--ol-white);
+    --ol-text-link:      var(--ol-blue-600);
+
+    --ol-border-default: var(--ol-gray-200);
+    --ol-border-strong:  var(--ol-gray-300);
+    --ol-border-focus:   var(--ol-blue-500);
+
+    /* Status colors */
+    --ol-status-active:     var(--ol-green-500);
+    --ol-status-warning:    var(--ol-amber-500);
+    --ol-status-error:      var(--ol-red-500);
+    --ol-status-info:       var(--ol-blue-500);
+    --ol-status-planned:    var(--ol-gray-400);
+    --ol-status-deprecated: var(--ol-amber-600);
+
+    /* Product color (overridden per product) */
+    --product-primary:   var(--ol-blue-600);
+    --product-secondary: var(--ol-indigo-500);
+    --product-accent:    var(--ol-amber-500);
+    --product-surface:   var(--ol-blue-50);
+
+    /* ── Border Radius ── */
+    --ol-radius-sm:   4px;
+    --ol-radius-md:   6px;
+    --ol-radius-lg:   8px;
+    --ol-radius-xl:   12px;
+    --ol-radius-full: 9999px;
+
+    /* ── Shadows ── */
+    --ol-shadow-sm:  0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --ol-shadow-md:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --ol-shadow-lg:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+    /* ── Typography ── */
+    --ol-font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --ol-font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+    --ol-text-xs:   0.75rem;
+    --ol-text-sm:   0.875rem;
+    --ol-text-base: 1rem;
+    --ol-text-lg:   1.125rem;
+    --ol-text-xl:   1.25rem;
+    --ol-text-2xl:  1.5rem;
+    --ol-text-3xl:  1.875rem;
+
+    /* ── Animation ── */
+    --ol-duration-fast:   100ms;
+    --ol-duration-normal: 200ms;
+    --ol-duration-slow:   300ms;
+
+    /* ── Z-Index Scale ── */
+    --ol-z-dropdown:  50;
+    --ol-z-sticky:    100;
+    --ol-z-overlay:   200;
+    --ol-z-modal:     300;
+    --ol-z-popover:   400;
+    --ol-z-toast:     500;
+    --ol-z-tooltip:   600;
+    --ol-z-command:   700;
+  }
+}

@@ -1,0 +1,6 @@
+[data-product="elara"] {
+  --product-primary:   var(--ol-indigo-500);   /* Indigo — AI/conversation feel */
+  --product-secondary: var(--ol-violet-500);   /* Violet */
+  --product-accent:    var(--ol-pink-500);     /* Pink — extraction highlights */
+  --product-surface:   var(--ol-indigo-50);    /* Faint indigo tint */
+}

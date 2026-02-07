@@ -1,0 +1,6 @@
+[data-product="telos"] {
+  --product-primary:   var(--ol-blue-600);     /* Blue — technical/architectural */
+  --product-secondary: var(--ol-indigo-500);   /* Indigo */
+  --product-accent:    var(--ol-amber-500);    /* Amber — warnings, ADRs */
+  --product-surface:   var(--ol-blue-50);      /* Faint blue tint */
+}
