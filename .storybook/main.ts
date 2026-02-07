@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/vue3-vite'
+import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
 const config: StorybookConfig = {
@@ -17,6 +18,8 @@ const config: StorybookConfig = {
       ...config.resolve.alias,
       '@': resolve(__dirname, '../src'),
     }
+    config.plugins = config.plugins || []
+    config.plugins.push(tailwindcss())
     return config
   },
 }

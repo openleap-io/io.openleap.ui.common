@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@import "../src/tokens/base.css";
+@import "../src/tokens/elara.css";
+@import "../src/tokens/telos.css";
+@import "../src/tokens/dark.css";
