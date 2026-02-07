@@ -23,22 +23,42 @@ pnpm build
 pnpm typecheck
 ```
 
-## Components (Phase U1)
+## Components
 
-| Component | Description |
-|-----------|-------------|
-| `OlButton` | Button with 6 variants and 3 sizes |
-| `OlIconButton` | Icon-only button with tooltip |
-| `OlBadge` | Generic colored badge |
-| `OlStatusBadge` | Domain-aware status indicator |
-| `OlCard` | Card container (hoverable, clickable) |
-| `OlCardHeader` | Card header with title/description/actions slots |
-| `OlCardContent` | Card body |
-| `OlCardFooter` | Card footer |
-| `OlInput` | Text input with icon, error, clearable |
-| `OlSkeleton` | Shimmer loading placeholder |
-| `OlEmptyState` | No-data state with icon/title/description/action |
-| `OlSpinner` | Loading spinner |
+| Group | Components |
+|-------|------------|
+| **Button** | `OlButton`, `OlIconButton`, `OlButtonGroup` |
+| **Badge** | `OlBadge`, `OlStatusBadge`, `OlTag` |
+| **Card** | `OlCard`, `OlCardHeader`, `OlCardContent`, `OlCardFooter` |
+| **Input** | `OlInput`, `OlTextarea`, `OlSearchInput` |
+| **Select** | `OlSelect` |
+| **Checkbox** | `OlCheckbox`, `OlSwitch` |
+| **Dialog** | `OlDialog`, `OlAlertDialog`, `OlSheet` |
+| **Tooltip** | `OlTooltip`, `OlTooltipProvider` |
+| **Dropdown** | `OlDropdown`, `OlContextMenu` |
+| **Toast** | `OlToast`, `OlToastProvider` |
+| **Tabs** | `OlTabs`, `OlTabList`, `OlTabTrigger`, `OlTabContent` |
+| **Data Display** | `OlAccordion`, `OlAccordionItem`, `OlTree`, `OlTreeItem`, `OlDataTable`, `OlVirtualList` |
+| **Layout** | `OlDivider`, `OlScrollArea`, `OlSplitPane` |
+| **Avatar** | `OlAvatar`, `OlAvatarGroup` |
+| **Navigation** | `OlBreadcrumb`, `OlSidebar`, `OlSidebarItem`, `OlSidebarGroup`, `OlCommandPalette` |
+| **Typography** | `OlHeading`, `OlText`, `OlCode` |
+| **Feedback** | `OlSkeleton`, `OlEmptyState`, `OlSpinner`, `OlErrorState`, `OlProgress` |
+
+**53 components** across 17 groups.
+
+## Composables
+
+| Composable | Description |
+|------------|-------------|
+| `useToast` | Show success/error/warning/info toasts (requires `OlToastProvider`) |
+| `useTheme` | Toggle light/dark/system theme with localStorage persistence |
+| `useBreakpoints` | Reactive mobile/tablet/desktop breakpoint detection |
+| `useKeyboardShortcut` | Register keyboard shortcuts (`mod+k`, `shift+p`, etc.) |
+| `useClipboard` | Copy text to clipboard with `copied` indicator |
+| `useMediaQuery` | Reactive `matchMedia` wrapper |
+| `useDisclosure` | Simple open/close/toggle boolean state |
+| `useFocusTrap` | Trap Tab focus within a container element |
 
 ## Consuming in a Nuxt 3 App
 

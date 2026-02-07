@@ -59,6 +59,15 @@ export interface BreadcrumbItem {
   icon?: IconComponent
 }
 
+/** Tree node for OlTree */
+export interface TreeNode {
+  id: string
+  label: string
+  icon?: IconComponent
+  children?: TreeNode[]
+  disabled?: boolean
+}
+
 /** Command palette group */
 export interface CommandGroup {
   heading: string
